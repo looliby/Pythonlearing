@@ -1,0 +1,13 @@
+1、循环
+      for循环： 格式 for i in range(3): 
+                     for i in range(0, 10, 3):     从0开始，到10结束，步长为3
+                     range() 可以是字符串，元组，字典，列表，集合
+      while循环： 格式 while i < 10:
+                       while True:
+     可用break跳出循环，continue进入下一步循环
+2、ord(x) 求字符x的编码
+3、chr(x) 求编码为x的字符
+4、异常处理： try：
+                  内容
+              except：
+                  pass           #pass语句什么都不做
