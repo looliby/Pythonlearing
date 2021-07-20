@@ -11,3 +11,20 @@
                   内容
               except：
                   pass           #pass语句什么都不做
+5、函数：
+        格式： def 函数名(参数1, 参数2, ...)
+                     语句组
+                     retrun 返回值(无返回值也可不写）
+6、字符串：str   元组：tuple   列表：list   字典：dict  集合：set
+7、isinstance(x, y) 查询数据x是否为类型y
+   len("122") 可用来求组合数据类型的元素个数
+8、python中的变量都是指针
+9、字符串：
+        字符串的切片： a = "ABCD"
+                      print(a[1:2])       输出 B  区间是左闭右开，终点不算
+                      print(a[0:-1])      输出ABC
+                      print("12345678"[7:1:-2])   输出 864
+        字符串的分割： import re
+                       a = 'Beautiful, is; beoktter*than\nugly'
+                       print(re.split(';| |,|\*|\n|ok',a))  分割串用 | 隔开
+                       输出 ['Beautiful','','is','','be','tter','than','ugly']
