@@ -1,2 +1,1 @@
-# Pythonlearing
-python Learning try
+# 记录学习python的过程
