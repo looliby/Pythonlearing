@@ -28,3 +28,36 @@
                        a = 'Beautiful, is; beoktter*than\nugly'
                        print(re.split(';| |,|\*|\n|ok',a))  分割串用 | 隔开
                        输出 ['Beautiful','','is','','be','tter','than','ugly']
+        字符串函数：count 求字串出现次数
+                   s = "thisAAbb AA"
+                   s.count('AA')   返回2
+                   len 求字符串长度
+                   upper,lower 转大写，小写
+                   find：查找字符串  rfind：从尾巴查找字符串  (找不到返回-1) find可以指定查找起点
+                   index,rindex也是查找字符串，找不到会引发异常
+                   replace()替换 如： s.replace("abc","ABC") 把s中所有abc换成ABC
+10、元组：
+        元组不能修改，如增删元素，赋值，修改顺序
+        元组的元素的内容有可能被修改，如果元素是列表，则可以修改该列表
+        empty = ()    x = ('hello',)  无逗号则x为字符串
+11、lambda 表达式
+            lambda x: x[2] 表示一个函数，参数是x，返回值是 x[2]
+12、列表：
+        列表可增删元素，元素可修改
+        list = []
+        list.append(200)   append用于添加单个元素
+        列表的切片与字符串类似
+        列表的排序： a = [4, 3, 6, 7] a.sort()  b = sorted(a) 
+                  自定义排序：def myKey(x):
+                                    return x % 10
+                              a.sort(key = myKey)
+                  student.sort(key = lambda x: x[2])
+                  多级排序： def f(x):
+                                 return (-x[2],x[1],x[0])   - 表示从高到低
+        函数：翻转:reverse()  插入：insert(i,x)  删除：remove()  查找：index()  计算列表包含多少个x：count(x)
+        列表映射： map可将一个序列映射到另一个序列
+                       a = list(map(lambda x:2*x,[2,3,4]))
+                       print(a)             #>>[4,6,8]
+                   map用于输入
+                       x,y,z = map(int, input.split())   输入 1 23 45
+                       print(x,y,z)                      输出 1 23 45 
