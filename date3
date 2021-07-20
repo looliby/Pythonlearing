@@ -11,3 +11,18 @@
                      删除键为x的元素，如果不存在，产生异常：pop(x)
                      浅拷贝：copy()
                      如果key存在，则返回key所对应的值，否则返回value：get(key, value)
+        字典的深拷贝：
+                    import copy
+                    x = {'username': 'admin', 'machines': ['foo', 'bar', 'baz']}
+                    y = copy.deepcopy(x)
+2、集合：同数学概念上的集合,集合元素没有顺序，不能通过下标访问
+        集合的构造：可由列表转化而来
+                    a = set([])
+        集合的函数：添加元素x，如果x已经存在，则不添加：add(x)
+                    清空集合：clear()
+                    返回自身浅拷贝：copy()
+                    删除元素x，如果不存在x，则会引发异常：remove(x)
+                    将序列x中的元素加入到集合：update(x)
+        集合的运算：x是否在集合中：x in a
+                   求a和b的并、交、差、对称差：a | b    a & b   a - b   a ^ b
+                   a是否是b的子集： a < b
