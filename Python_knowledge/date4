@@ -5,3 +5,20 @@
       用f.readline()读取文件一行
       用f.close()关闭文件
       用f.read()读取全部文件内容，返回一个字符串，包含文件全部内容
+2、数据库
+import sqlite3
+
+db = sqlite3.connect("D:/Python_test/sqltest2.db")  # 连接数据库，若不存在则自动创建
+cur = db.cursor()  # 获取光标，要操作数据库一般通过光标进行
+sql = '''CREATE TABLE if not exists students (id integer primary key, name text, gpa real, birthday date, 
+age integer, picture blob) '''
+# 如果表 students 不存在就创建它
+cur.execute(sql)  # 执行sql命令
+cur.execute("insert into students values(1600, '张三', 3.81, 2000-09-12, 18, null)")  # 插入一个记录
+mylist = [(1700, '李四', 4.1, '2001-02-21', 17, None), (1900, '王五', 2.9, '1999-09-24', 19, None)]
+for s in mylist:
+    cur.execute('INSERT INTO students VALUES(?,?,?,?,?,?)', (s[0], s[1], s[2], s[3], s[4], s[5]))
+db.commit()  # 真正写入，写入操作都需要这个
+cur.close()  # 关闭光标
+db.close()  # 关闭数据库
+
