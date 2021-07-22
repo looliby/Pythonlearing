@@ -25,7 +25,7 @@ lbUsername = tk.Label(win, text="用户名: ")
 lbPassword = tk.Label(win, text="密码: ")
 username, password = tk.StringVar(), tk.StringVar()  # 字符串变量，用于关联用户名输入和密码输入框
 etUsername = tk.Entry(win, textvariable=username)  # 用户名输入框，与username关联
-etPassword = tk.Entry(win, textvariable=password, show='*')
+etPassword = tk.Entry(win, textvariable=password, show="*")
 lbHint = tk.Label(win, text="请登录")
 lbHint.grid(row=0, column=0, columnspan=2)
 lbUsername.grid(row=1, column=0, padx=5, pady=5)
@@ -34,11 +34,11 @@ etUsername.grid(row=1, column=1, padx=5, pady=5)
 etPassword.grid(row=2, column=1, padx=5, pady=5)
 showPassword = tk.BooleanVar()  # 用于关联“显示密码”当选框
 showPassword.set(True)  # 一开始为选中状态
-cbPassword = tk.Checkbutton(win, text="显示密码", variable=showPassword, command=cbPassword_click())
+cbPassword = tk.Checkbutton(win, text="显示密码", variable=showPassword, command=cbPassword_click)
 # cbPassword关联showPassword,其事件响应函数是cbPassword_click
 cbPassword.grid(row=3, column=0, padx=5, pady=5)
 btLogin = tk.Button(win, text="登录", command=btLogin_click)
-btQuit = tk.Button(win, text="退出", command=win.quit())
+btQuit = tk.Button(win, text="退出", command=win.quit)
 btLogin.grid(row=4, column=0, pady=5)
 btQuit.grid(row=4, column=1, pady=5)
 win.columnconfigure(0, weight=1)
