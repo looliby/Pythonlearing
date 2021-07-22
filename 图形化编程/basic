@@ -1,1 +1,11 @@
-
+thinter库：
+    控件                描述
+    Button              按钮
+    Checkbutton         多选框
+    Entry               单行编辑框
+    Frame               框架，可摆放多个控件
+    Label               标签，可显示文本和图像
+    Listbox             列表框
+    Menu                菜单
+    OptionMenu          带下拉菜单的按钮
+    
