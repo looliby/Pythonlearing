@@ -8,3 +8,12 @@ thinter库：
     Listbox             列表框
     Menu                菜单
     OptionMenu          带下拉菜单的按钮
+    Radiobutton         单选框
+    Text                多行编辑框
+    Spinbox             微调输入框。可以输入数值，也可以用上下箭头微调数值
+    LabelFrame          带文字标签的框架，可摆放多个控件
+    Canvas              画布
+    Message             消息，显示多行文本
+    Scale               滑块标尺，可以做一定范围的数值选择
+    Scrollbar           滚动条
+    PanedWindow         滑动分割窗口，将窗口分成几块
