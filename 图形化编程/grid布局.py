@@ -12,5 +12,5 @@ etUsername.grid(row=0, column=1, padx=5, pady=5)
 etPassword.grid(row=1, column=1, padx=5, pady=5)
 btLogin = tk.Button(win, text="登录")
 btLogin.grid(row=2, column=0, columnspan=2, padx=5, pady=5)
+win.geometry("800x500+200+100")
 win.mainloop()      # 显示窗口
-
